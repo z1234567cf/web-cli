@@ -1,0 +1,20 @@
+{
+  "name": "ziggy-web-cli",
+  "version": "1.0.0",
+  "description": "use to create vue or react project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/z1234567cf/web-cli.git"
+  },
+  "keywords": ["cli","template"],
+  "author": "ziggy-zcf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/z1234567cf/web-cli/issues"
+  },
+  "homepage": "https://github.com/z1234567cf/web-cli#readme"
+}
