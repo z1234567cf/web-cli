@@ -12,7 +12,7 @@ const path = require('path');
 const packageConfig = JSON.parse(fs.readFileSync(path.resolve(__dirname,'../package.json')));
 
 let {version,config} = packageConfig;
-console.log('process.cwd',process.cwd());
+// console.log('process.cwd',process.cwd());
 
 program
 .version(`${version}`,'-v,--version')
@@ -27,12 +27,12 @@ function inquirerAppInfo(templateType,appName){
             message: '项目名称',
         }  
     ]).then(res=>{
-        console.log(res[appName]);
+        // console.log(res[appName]);
         if(res[appName]){
            
             //判断是否存在
             let destination = path.resolve(process.cwd(),res[appName]);
-            console.log('destination',destination)
+            // console.log('destination',destination)
             if(fs.existsSync(destination)){
                 console.log(chalk.red('文件已存在，创建失败！'))
             }else{
@@ -51,7 +51,7 @@ function inquirerAppInfo(templateType,appName){
                     }else{
                         spinner.succeed('模板下载成功！');
                         let target = path.join(process.cwd(),radom,templateType);
-                        console.log("target",target);
+                        // console.log("target",target);
                         // let destination = path.resolve(process.cwd(),appName);
                         fse.moveSync(target,destination);
                         fse.removeSync(path.join(process.cwd(),radom))
