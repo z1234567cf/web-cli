@@ -1,6 +1,6 @@
 {
   "name": "ziggy-web-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "use to create vue or react project",
   "main": "index.js",
   "scripts": {
