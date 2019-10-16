@@ -71,10 +71,10 @@ function inquirerAppInfo(templateType,appName){
 
 if(program.init=='vue'){
     inquirerAppInfo(program.init,'name');
-}else if(program.init=='reacet'){
+}else if(program.init=='react-tem'){
     inquirerAppInfo(program.init,'name');
 }else{
-    console.log(chalk.red('请选择初始模板类型vue或者react'))
+    console.log(chalk.red('请选择初始模板类型vue或者react-tem'))
 }
 
 
